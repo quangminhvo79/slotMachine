@@ -79,7 +79,7 @@ const machine = new SlotMachine(element, {
 | **randomize**  | `Function` | `() => number` | Function (returns number) that returns the next active element (random value as default) |
 | **direction**  | `String`   | `up`           | The spin direction (possible values are `up` and `down`)
 | **finishTransition**  | `String`   | `ease-out`           | The spin with custom finish animate transition                               |
-| **finishDuration**  | `String`   | `0 (not set)`           | Duration (in ms) of last spin                                |
+| **finishDuration**  | `Number`   | `0 (not set)`           | Duration (in ms) of last spin                                |
 
 ### Properties
 
