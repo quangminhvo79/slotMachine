@@ -1,4 +1,4 @@
-# jQuery-SlotMachine [![Build Status](https://travis-ci.org/josex2r/jQuery-SlotMachine.svg?branch=master)](https://travis-ci.org/josex2r/jQuery-SlotMachine) [![Dependency Status](https://david-dm.org/josex2r/jQuery-SlotMachine.svg)](https://david-dm.org/josex2r/jQuery-SlotMachine) [![devDependency Status](https://david-dm.org/josex2r/jQuery-SlotMachine/dev-status.svg)](https://david-dm.org/josex2r/jQuery-SlotMachine#info=devDependencies)
+# Forked from jQuery-SlotMachine
 
 > :mega: jQuery is not neccessary now! The name it's just legacy.
 
@@ -77,7 +77,9 @@ const machine = new SlotMachine(element, {
 | **active**     | `Number`   | `0`            | The initial visible element (0 means the first one)                                      |
 | **delay**      | `Number`   | `200`          | Duration (in ms) of each spin                                                            |
 | **randomize**  | `Function` | `() => number` | Function (returns number) that returns the next active element (random value as default) |
-| **direction**  | `String`   | `up`           | The spin direction (possible values are `up` and `down`)                                 |
+| **direction**  | `String`   | `up`           | The spin direction (possible values are `up` and `down`)
+| **finishTransition**  | `String`   | `ease-out`           | The spin with custom finish animate transition                               |
+| **finishDuration**  | `String`   | `0 (not set)`           | Duration (in ms) of last spin                                |
 
 ### Properties
 
