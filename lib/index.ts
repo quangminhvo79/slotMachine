@@ -168,8 +168,8 @@ export default class SlotMachine {
 
     switch (spins) {
       case 1:
-        delay /= 0.5;
-        this.transition = 'ease-out';
+        delay = this.options.finishDuration || (delay /  0.5);
+        this.transition = this.options.finishTransition || 'ease-out';
         this._animationFX = TILE_FX.TURTLE;
         break;
       case 2:

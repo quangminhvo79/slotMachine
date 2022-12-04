@@ -19,4 +19,6 @@ export type Options = {
   delay?: number;
   randomize?: RandomizeCallback;
   direction?: Direction;
+  finishTransition?: string;
+  finishDuration?: number;
 };

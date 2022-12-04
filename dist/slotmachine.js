@@ -106,6 +106,8 @@ const DEFAULTS = {
     delay: 200,
     randomize: (_, max) => randomInteger(0, max),
     direction: 'up',
+    finishTransition: '',
+    finishDuration: 0
 };
 var CONTAINER_FX;
 (function (CONTAINER_FX) {
@@ -247,8 +249,8 @@ class SlotMachine {
         this.transition = 'linear';
         switch (spins) {
             case 1:
-                delay /= 0.5;
-                this.transition = 'ease-out';
+                delay = this.options.finishDuration || (delay / 0.5);
+                this.transition = this.options.finishTransition || 'ease-out';
                 this._animationFX = TILE_FX.TURTLE;
                 break;
             case 2:
