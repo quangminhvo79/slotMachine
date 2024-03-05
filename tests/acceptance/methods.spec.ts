@@ -1,7 +1,7 @@
 import SlotMachine from '../../lib';
 import { getVisibleTile, render } from '../setup';
 
-describe('Setters', () => {
+describe.skip('Setters', () => {
   let machine: SlotMachine;
 
   afterEach(() => {

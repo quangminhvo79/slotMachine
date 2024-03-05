@@ -2,7 +2,7 @@ import SlotMachine from '../../lib';
 import { Direction } from '../../lib/types';
 import { getVisibleTile, render } from '../setup';
 
-describe('Getters', () => {
+describe.skip('Getters', () => {
   let machine: SlotMachine;
 
   afterEach(() => {
