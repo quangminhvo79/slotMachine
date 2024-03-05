@@ -25,9 +25,11 @@ export default class SlotMachine {
     // Set plugin options
     this.setOptions(options);
     this.active = this.options.active;
-    this.setupBounds();
-    // Show active element
-    this._resetPosition();
+    setTimeout(() => {
+      this.setupBounds()
+      // Show active element
+      this._resetPosition();
+    }, 300);
   }
 
   setOptions(options: Options) {
