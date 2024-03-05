@@ -173,19 +173,19 @@ export default class SlotMachine {
         this._animationFX = TILE_FX.TURTLE;
         break;
       case 2:
-        delay /= 0.75;
+        delay = this.options.delaySpin2 || (delay /  0.75);
         this._animationFX = TILE_FX.SLOW;
         break;
       case 3:
-        delay /= 1;
+        delay = this.options.delaySpin3 || (delay /  1);
         this._animationFX = TILE_FX.NORMAL;
         break;
       case 4:
-        delay /= 1.25;
+        delay = this.options.delaySpin4 || (delay /  1.25);
         this._animationFX = TILE_FX.NORMAL;
         break;
       default:
-        delay /= 1.5;
+        delay = this.options.delaySpin5 || (delay /  1.5);
         this._animationFX = TILE_FX.FAST;
     }
 

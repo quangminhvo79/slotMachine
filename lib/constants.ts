@@ -10,7 +10,11 @@ export const DEFAULTS: Required<Options> = {
   randomize: (_, max) => randomInteger(0, max), // Randomize function, must return a number with the selected position
   direction: 'up', // Animation direction ['up'||'down'],
   finishTransition: '',
-  finishDuration: 0
+  finishDuration: 0,
+  delaySpin2: 0,
+  delaySpin3: 0,
+  delaySpin4: 0,
+  delaySpin5: 0
 };
 
 export enum CONTAINER_FX {

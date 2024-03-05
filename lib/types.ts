@@ -21,4 +21,8 @@ export type Options = {
   direction?: Direction;
   finishTransition?: string;
   finishDuration?: number;
+  delaySpin2?: number;
+  delaySpin3?: number;
+  delaySpin4?: number;
+  delaySpin5?: number;
 };
