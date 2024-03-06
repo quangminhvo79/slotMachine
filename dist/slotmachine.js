@@ -140,8 +140,10 @@ class SlotMachine {
         this.container = new Container(this.element);
         this.setOptions(options);
         this.active = this.options.active;
-        this.setupBounds();
-        this._resetPosition();
+        setTimeout(() => {
+            this.setupBounds();
+            this._resetPosition();
+        }, 300);
     }
     setOptions(options) {
         this.options = { ...DEFAULTS, ...options };
